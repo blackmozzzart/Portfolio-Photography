@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -110,19 +111,106 @@
         </div>
     </section>
     <!-- ============================== END OF ABOUT ============================== -->
+    <section id="gallery">
+        <div class="container gallery__container swiper mySwiper">
+            <div class="gallery__head">
+                <h2 class="gallery__tittle">My Gallery</h2>
+                <div class="empty gallery__empty"></div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery1.jpg" class="thumbnail" data-image="./src/images/gallery1.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery2.jpg" class="thumbnail" data-image="./src/images/gallery2.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery3.jpg" class="thumbnail" data-image="./src/images/gallery3.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery4.jpg" class="thumbnail" data-image="./src/images/gallery4.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery5.jpg" class="thumbnail" data-image="./src/images/gallery5.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery6.jpg" class="thumbnail" data-image="./src/images/gallery6.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery7.jpg" class="thumbnail" data-image="./src/images/gallery7.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery8.jpg" class="thumbnail" data-image="./src/images/gallery8.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery9.jpg" class="thumbnail" data-image="./src/images/gallery9.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery10.jpg" class="thumbnail" data-image="./src/images/gallery10.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery11.jpg" class="thumbnail" data-image="./src/images/gallery11.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./src/images/gallery1.jpg" class="thumbnail" data-image="./src/images/gallery1.jpg">
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="overlay" id="overlay" style="display: none;" onclick="closeFullScreen()">
+            <img id="fullscreenImage" src="" alt="Полноэкранный режим">
+        </div>
+    </section>
+    <!-- ============================== END OF GALLERY ============================== -->
+    <section id="exhibitions">
+        <div class="container exhibitions__container">
+            <h2 class="exhibitions__title">Exhibitions</h2>
+            <div class="empty exhibitions__empty"></div>
+            <div class="exhibitions__head">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <a href="mailto:umar@napshev.ru" class="contact__btn exhibitions__btn">
+                    <i class="uil uil-arrow-up-right"></i>
+                    <p>CONTACT - SEND ME AN EMAIL</p>
+                </a>
+            </div>
+            <div class="exhibitions__gallery">
+                <article><img src="./src/images/ev.jpg"></article>
+                <article><img src="./src/images/e1.jpg"></article>
+                <article><img src="./src/images/e2.jpg"></article>
+                <article><img src="./src/images/eh.jpg"></article>
+                <article><img src="./src/images/e3.jpg"></article>
+                <article><img src="./src/images/e4.jpg"></article>
+                <article><img src="./src/images/e5.jpg"></article>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== END OF EXHIBITIONS ============================== -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__head">
+                <h2 class="footer__title">BLACKMOZZZART</h2>
+                <a href="mailto:umar@napshev.ru" class="footer__btn"><i class="uil uil-arrow-up-right"></i></a>
+            </div>
+            <ul class="footer__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- ============================== END OF FOOTER ============================== -->
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
