@@ -31,33 +31,7 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-// function openFullScreen(imageId) {
-//     var image = document.getElementById(imageId);
-//     var overlay = document.getElementById('overlay');
-//     var fullscreenImage = document.getElementById('fullscreenImage');
-
-//     overlay.style.display = 'block';
-//     fullscreenImage.src = image.src;
-// }
-
-// function closeFullScreen() {
-//     var overlay = document.getElementById('overlay');
-//     overlay.style.display = 'none';
-// }
-
-// function toggleFullScreen(imageId) {
-//     var overlay = document.getElementById('overlay');
-//     var fullscreenImage = document.getElementById('fullscreenImage');
-//     var image = document.querySelector(".thumbnail[data-image='" + imageId + "']");
-
-//     if (overlay.style.display === 'block') {
-//         overlay.style.display = 'none';
-//     } else {
-//         overlay.style.display = 'block';
-//         fullscreenImage.src = image.getAttribute('data-image');
-//     }
-// }
-
+// ZOOM JS
 function toggleFullScreen() {
     var overlay = document.getElementById('overlay');
     var fullscreenImage = document.getElementById('fullscreenImage');
@@ -84,3 +58,31 @@ thumbnails.forEach(function (thumbnail) {
 overlay.addEventListener('click', function () {
     overlay.style.display = 'none';
 });
+
+// NAV_BURGER
+const nav = document.querySelector('.nav__links');
+const openNavBtn = document.querySelector('#nav__toggle-open');
+const closeNavBtn = document.querySelector('#nav__toggle-close');
+
+const openNav = () => {
+    nav.style.display = 'flex';
+    openNavBtn.style.display = 'none';
+    closeNavBtn.style.display = 'inline-block';
+}
+
+openNavBtn.addEventListener('click', openNav);
+
+const closeNav = () => {
+    nav.style.display = 'none';
+    openNavBtn.style.display = 'inline-block';
+    closeNavBtn.style.display = 'none';
+}
+
+closeNavBtn.addEventListener('click', closeNav);
+
+// close nav menu on click of menu link
+if (document.body.clientWidth < 1024) {
+    nav.querySelectorAll('li a').forEach(navLink => {
+        navLink.addEventListener('click', closeNav);
+    })
+}
